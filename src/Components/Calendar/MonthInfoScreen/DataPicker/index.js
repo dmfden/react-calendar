@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
-import headerStyles from "../styles/calendarHeader.module.scss";
-import { calendarContext, calendarChangeState } from "../../../context";
-import getDate from "../helpers/getDate";
+import headerStyles from "../../styles/calendarHeader.module.scss";
+import { calendarContext, calendarChangeState } from "../../../../context";
+import getDate from "../../helpers/getDate";
 import classNames from "classnames";
 
 function DataPicker() {

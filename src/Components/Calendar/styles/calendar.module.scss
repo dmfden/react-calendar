@@ -7,8 +7,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-content: stretch;
-  align-items: stretch;
+  //align-content: stretch;
+  // align-items: stretch;
   height: auto;
 
   @include _breakpoint_md {
@@ -93,22 +93,14 @@
 
       .cell {
         width: 14%;
-        height: 42px;
+        height: auto;
+        aspect-ratio: 1;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.4rem;
         font-weight: 700;
-
-        @include _breakpoint_md {
-          width: 14%;
-          height: 36px;
-        }
-        @include _breakpoint_xl {
-          width: 44px;
-          height: 44px;
-        }
 
         .buttonDay {
           width: 100%;

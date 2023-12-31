@@ -23,15 +23,16 @@ function CurrentDayScreen() {
 
   let dayName = getDayNameString(date);
   const screenCurrentDayClasses = classNames(styles.screen, styles.currentDay);
+  const dateText = date.day ? (
+    <p className={styles.dayText} ref={dayBlock}>
+      {date?.day}
+    </p>
+  ) : null;
 
   return (
     <div className={screenCurrentDayClasses}>
       <p className={styles.title}>{dayName && dayName}</p>
-      {date.day ? (
-        <p className={styles.dayText} ref={dayBlock}>
-          {date?.day}
-        </p>
-      ) : null}
+      {dateText}
     </div>
   );
 }

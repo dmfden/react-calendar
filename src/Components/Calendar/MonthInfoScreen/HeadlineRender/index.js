@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/calendar.module.scss";
+import styles from "../../styles/calendar.module.scss";
 import classNames from "classnames";
 
 const HeadlineRender = () => {

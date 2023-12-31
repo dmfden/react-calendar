@@ -1,0 +1,39 @@
+@import "./breakpoints.scss";
+@import "./colors.scss";
+@import "./animation.scss";
+
+:root {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+  color: $general-grey;
+}
+
+.container {
+  padding: 18px;
+  width: 100%;
+
+  @include _breakpoint_md {
+    padding: 28px;
+  }
+
+  @include _breakpoint_xl {
+    padding: 0;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.app-title {
+  font-size: 3rem;
+  color: #232;
+  text-decoration: underline;
+  font-weight: 700;
+  margin: 12px 0;
+  text-align: center;
+  @include _breakpoint_md {
+    margin: 48px 0;
+  }
+}

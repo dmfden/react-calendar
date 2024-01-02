@@ -30,7 +30,7 @@ function Header({ year, month }) {
     setIsDatePicker(true);
   };
 
-  const titleStr = (
+  const headerTitleBlock = (
     <button className={classNames(headerStyles.buttonTitle, "fadeIn")}>
       {month} {year}
     </button>
@@ -42,7 +42,7 @@ function Header({ year, month }) {
         {arrowL}
       </button>
       <div className={headerStyles.title} onClick={handleTitleClick}>
-        {isDatePicker ? <DataPicker /> : titleStr}
+        {isDatePicker ? <DataPicker /> : headerTitleBlock}
       </div>
       <button className={headerStyles.button} onClick={clickSlideMonthHandler} data-slide-month="next">
         {arrowR}
